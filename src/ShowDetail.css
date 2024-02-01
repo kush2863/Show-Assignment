@@ -1,31 +1,24 @@
-
+/* ShowDetails.css */
 .show-details-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color:rgb(2, 51, 51);
+  background-color: rgb(2, 51, 51);
   border-radius: 18px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  
- 
 }
 
-h1, h2 {
-  color:whitesmoke;
+h1, h2, h3 {
+  color: whitesmoke;
   text-align: center;
-}
-h3{
-    color: whitesmoke;
 }
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  position: relative;
-  left: 38%;
-
-
+  margin: 0 auto; /* Center the image */
+  display: block; /* Remove extra spacing below inline images */
 }
 
 p {
@@ -37,11 +30,16 @@ ul {
   list-style: none;
   padding: 0;
   color: whitesmoke;
-
 }
 
 li {
   margin-bottom: 8px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
@@ -53,23 +51,24 @@ button {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-
   transition: background-color 0.3s ease;
-}
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 button:hover {
   background-color: #2980b9;
 }
 
-
-
 @media (max-width: 768px) {
   .show-details-container {
     padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }
