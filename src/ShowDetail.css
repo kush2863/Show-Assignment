@@ -1,4 +1,4 @@
-/* ShowDetails.css */
+
 .show-details-container {
   max-width: 800px;
   margin: 0 auto;
@@ -67,7 +67,7 @@ button:hover {
 }
 
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .show-details-container {
     padding: 10px;

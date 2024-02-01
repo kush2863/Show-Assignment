@@ -1,15 +1,15 @@
-// BookingForm.js
+
 import React, { useState } from 'react';
-import './BookingForm.css'; // Import the CSS file
+import './BookingForm.css'; 
 
 const BookingForm = ({ movieName, onSubmit, onClose }) => {
   const [formData, setFormData] = useState({
-    // Initial form data if needed
+    
     name: '',
     email: '',
-    // ... add more fields as needed
+
   });
-  const [bookingFormVisible, setBookingFormVisible] = useState(true); // Set it to true initially
+  const [bookingFormVisible, setBookingFormVisible] = useState(true); 
 
   const handleChange = (e) => {
     setFormData({
